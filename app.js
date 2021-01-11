@@ -5,8 +5,9 @@ const path = require('path')
 const bodyParser = require("body-parser")
 const mongoose = require("./database");
 const session = require("express-session");
+const port=process.env.PORT || 3003
 
-const server = app.listen(port, () => console.log("Server listening on port "));
+const server = app.listen(port, () => console.log("Server listening on port " +port));
 
 app.set("view engine", "pug");
 app.set("views", "views");
